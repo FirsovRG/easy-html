@@ -1,0 +1,97 @@
+.selectBlock {
+	display: flex;
+	flex-direction: column;
+	width: max-content;
+}
+
+.defaultLabelStyle {
+	margin-bottom: 10px;
+}
+
+.defaultSelectStyle {
+	display: flex;
+	align-items: center;
+	height: 40px;
+	padding-left: 10px;
+	background-color: rgb(13, 25, 99);
+	color: #ffffff;
+	border-radius: 5px;
+	outline: none;
+	font-family: 'Montserrat', 'Adobe Blank';
+	font-size: 16px;
+	border: 1px solid #ffffffa2;
+	cursor: pointer;
+	user-select: none;
+	z-index: 5;
+	position: relative;
+}
+
+.selectIsOpened {
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.defaultOptionStyle {
+	display: flex;
+	align-items: center;
+	height: 30px;
+	font-size: 14px;
+	padding-left: 15px;
+	cursor: pointer;
+}
+
+.defaultOptionStyle:hover {
+	background-color: rgb(19, 31, 107);
+}
+
+.dropDownArrow {
+	height: 40%;
+	filter: invert(90%);
+	margin: 0 3px;
+	transition: 0.5s;
+}
+
+.arrowUp {
+	transform: rotate(180deg);
+}
+.arrowDown {
+	transform: rotate(0);
+}
+
+.dropDownMenu {
+	background-color: rgb(21, 34, 121);
+	border: 1px solid #ffffff7e;
+	padding-top: 15px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	position: absolute;
+	width: 100%;
+	top: 35px;
+	box-sizing: border-box;
+	z-index: 1;
+}
+
+.defaultOptionStyle:last-child{
+	border-bottom-left-radius: inherit;
+	border-bottom-right-radius: inherit;
+}
+
+.select {
+	position: relative;
+	width: 140px;
+	z-index: 1;
+	outline: none;
+}
+
+.divider {
+	width: 1px;
+	height: 50%;
+	background-color: rgba(255, 255, 255, 0.603);
+}
+
+.selectControls {
+	display: flex;
+	height: 100%;
+	align-items: center;
+	margin-left: auto;
+}

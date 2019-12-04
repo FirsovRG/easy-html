@@ -1,0 +1,87 @@
+.welcomePage {
+	display: flex;
+	height: 100%;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.content {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	align-items: center;
+	height: 100%;
+}
+
+.title {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	font-weight: 900;
+	align-items: flex-end;
+	justify-content: center;
+	user-select: none;
+}
+
+.title_maxSize {
+	font-size: 70px;
+}
+
+.title_averageSize {
+	font-size: 60px;
+	font-weight: 700;
+}
+
+.title_minSize {
+	font-size: 50px;
+	font-weight: 500;
+}
+
+.designGif {
+	width: 35%;
+}
+
+.copyright {
+	display: flex;
+	height: 50px;
+	align-items: center;
+	font-size: 14px;
+}
+
+.copyright a {
+	display: flex;
+}
+
+.githubImg {
+	filter: invert();
+	height: 20px;
+	margin-left: 10px;
+}
+
+.buttonsBlock {
+	display: flex;
+	margin-top: 50px;
+}
+
+.buttonsBlock a {
+	background-color: #3ced9b;
+	border: none;
+	color: #ffffff;
+	padding: 10px 20px;
+	border-radius: 5px;
+	font-size: 20px;
+	font-weight: 600;
+	white-space: nowrap;
+	outline: none;
+	text-decoration: none;
+	transition: 0.5s;
+}
+
+.buttonsBlock a:not(:last-child){
+	margin-right: 20px;
+}
+
+.buttonsBlock a:hover {
+	background-color: #2cad71;
+}
