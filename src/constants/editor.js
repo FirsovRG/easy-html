@@ -1,10 +1,10 @@
 export const screenResolutions = [
-	'1920x1080',
-	'1366x768',
-	'1280x1024',
-	'1536x864',
-	'1600x900',
-	'1280x800',
-	'1440x900',
-	'360x640'
+	{ width: 1920, height: 1080 },
+	{ width: 1366, height: 768 },
+	{ width: 1280, height: 1024 },
+	{ width: 1536, height: 864 },
+	{ width: 1600, height: 900 },
+	{ width: 1280, height: 800 },
+	{ width: 1440, height: 900 },
+	{ width: 360, height: 640 }
 ];

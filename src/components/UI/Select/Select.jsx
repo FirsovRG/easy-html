@@ -30,7 +30,7 @@ export const Select = ({
 					className={classNames(styles.defaultSelectStyle, selectClassName)}
 					onClick={() => setIsSelectOpened(!isSelectOpened)}
 				>
-					{value}
+					{`${value.width}x${value.height}`}
 					<div className={styles.selectControls}>
 						<div className={styles.divider} />
 						<img
