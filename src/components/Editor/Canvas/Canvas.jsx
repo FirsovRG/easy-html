@@ -13,8 +13,6 @@ export class Canvas extends React.Component {
 		}
 	};
 
-	canvasContext = this.refs.canvas.getC
-
 	handleMouseDown = e => {
 		this.setState({ canDraw: true });
 		const { clientX, clientY } = e;
@@ -33,7 +31,8 @@ export class Canvas extends React.Component {
 	};
 
 	drawSelection = () => {
-        const canvasContext = this.refs.canvas;
+		const canvasContext = this.refs.canvas;
+		console.log(canvasContext)
 		if (this.state.canDraw) {
 			const { x1, x2, y1, y2 } = this.state.coordinates;
 			canvasContext.beginPath();
@@ -46,6 +45,7 @@ export class Canvas extends React.Component {
 
 	render() {
 		return (
+			<div className={styles.workspace}>
 			<div
 				ref={this.canvasRef}
 				className={styles.canvas}
@@ -58,6 +58,7 @@ export class Canvas extends React.Component {
 				onMouseMove={this.handleMouseMove}
 			>
 				<canvas></canvas>
+			</div>
 			</div>
 		);
 	}

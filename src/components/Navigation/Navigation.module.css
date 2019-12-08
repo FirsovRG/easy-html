@@ -1,6 +1,7 @@
 .navigation {
 	display: flex;
 	width: 100%;
+	z-index: 5;
 }
 
 .navigation ul {

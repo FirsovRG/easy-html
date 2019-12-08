@@ -15,12 +15,14 @@ class Editor extends React.Component {
 	render() {
 		return (
 			<div className={styles.editor}>
+				<div className={styles.controlsBlock}>
 				<Select
 					label='Screen resolution'
 					options={mapOptions}
 					onSelectItem={value => this.props.changeScreenResolution(value)}
 					value={this.props.screenResolution}
 				/>
+				</div>
 				<div className={styles.canvasBlock}>
 					<Canvas screenResolution={this.props.screenResolution} />
 				</div>

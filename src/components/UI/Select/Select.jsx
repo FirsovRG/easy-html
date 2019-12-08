@@ -23,12 +23,12 @@ export const Select = ({
 	const [isSelectOpened, setIsSelectOpened] = useState(isOpened);
 
 	return (
-		<div className={styles.selectBlock}>
+		<div className={styles.selectBlock} >
 			<label className={classNames(styles.defaultLabelStyle, labelClassName)}>{label}</label>
-			<div className={styles.select} tabIndex='0' onBlur={() => setIsSelectOpened(false)}>
+			<div className={styles.select} tabIndex='0' onBlur={() => setIsSelectOpened(false)} onClickCapture={() => setIsSelectOpened(!isSelectOpened)}>
 				<div
 					className={classNames(styles.defaultSelectStyle, selectClassName)}
-					onClick={() => setIsSelectOpened(!isSelectOpened)}
+					
 				>
 					{`${value.width}x${value.height}`}
 					<div className={styles.selectControls}>
@@ -44,7 +44,7 @@ export const Select = ({
 					</div>
 				</div>
 				{isSelectOpened && (
-					<div className={styles.dropDownMenu} onBlur={() => console.log('123')}>
+					<div className={styles.dropDownMenu}>
 						{options.map(option => (
 							<div
 								key={option.value}
