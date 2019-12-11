@@ -9,3 +9,10 @@ export const changeScreenResolution = ({ width, height }) => {
 		}
 	};
 };
+
+export const changeZoomValue = payload => {
+	return {
+		type: Actions.CHANGE_ZOOM_VALUE,
+		payload
+	};
+};

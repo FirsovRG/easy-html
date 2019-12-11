@@ -32,7 +32,7 @@ export class Canvas extends React.Component {
 
 	drawSelection = () => {
 		const canvasContext = this.refs.canvas;
-		console.log(canvasContext)
+		console.log(canvasContext);
 		if (this.state.canDraw) {
 			const { x1, x2, y1, y2 } = this.state.coordinates;
 			canvasContext.beginPath();
@@ -46,19 +46,20 @@ export class Canvas extends React.Component {
 	render() {
 		return (
 			<div className={styles.workspace}>
-			<div
-				ref={this.canvasRef}
-				className={styles.canvas}
-				style={{
-					width: `${this.props.screenResolution.width / 1.5}px`,
-					height: `${this.props.screenResolution.height / 1.5}px`
-				}}
-				onMouseDown={this.handleMouseMove}
-				onMouseUp={this.handleMouseUp}
-				onMouseMove={this.handleMouseMove}
-			>
-				<canvas></canvas>
-			</div>
+				<div
+					ref={this.canvasRef}
+					className={styles.canvas}
+					style={{
+						width: `${this.props.screenResolution.width / 1.5}px`,
+						height: `${this.props.screenResolution.height / 1.5}px`,
+						transform: `scale(${this.props.zoom}, ${this.props.zoom})`
+					}}
+					onMouseDown={this.handleMouseMove}
+					onMouseUp={this.handleMouseUp}
+					onMouseMove={this.handleMouseMove}
+				>
+					<canvas></canvas>
+				</div>
 			</div>
 		);
 	}

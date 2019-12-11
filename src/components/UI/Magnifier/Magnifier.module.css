@@ -1,0 +1,87 @@
+.magnifierBlock {
+	display: flex;
+	align-items: center;
+}
+
+.magnifier {
+	display: flex;
+	border-bottom: 1px solid #ffffffa2;
+	width: 70px;
+	height: 30px;
+	align-items: center;
+	padding: 0 10px;
+}
+
+.magnifierValue {
+	background-color: transparent;
+	color: #fff;
+	border: none;
+	outline: none;
+	margin: 0;
+	padding: 0;
+	width: auto;
+	font-family: 'Montserrat', 'Adobe Blank';
+	font-size: 16px;
+	width: 40px;
+}
+
+.magnifierIcon {
+	height: 20px;
+	filter: invert();
+	margin-left: auto;
+	margin-left: 5px;
+}
+
+.divider {
+	width: 1px;
+	height: 50%;
+	background-color: rgba(255, 255, 255, 0.603);
+}
+
+.magnifierControls {
+	display: flex;
+	height: 100%;
+	align-items: center;
+	margin-left: auto;
+	cursor: pointer;
+}
+
+.scaleControls {
+	padding-left: 5px;
+	display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ffffffa2;
+    border-right: 1px solid #ffffffa2;
+    height: 30px;
+}
+
+.scaleButton {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 30px;
+	width: 25px;
+    cursor: pointer;
+    transition: .5s;
+    height: 25px;
+    user-select: none;
+}
+
+.scaleButton:hover {
+	background-color: #0e1924;
+}
+
+.closed {
+    border: none;
+	max-width: 0;
+	overflow: hidden;
+	transition: 0.5s;
+}
+
+.opened {
+	max-width: 50px;
+	transition: 0.5s;
+	overflow: hidden;
+}

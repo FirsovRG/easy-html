@@ -60,17 +60,18 @@
 }
 
 .dropDownMenu {
-	background-color: transparent;
+	background-color: #080e14;
 	border: 1px solid #ffffff7e;
 	border: none;
 	border-bottom-left-radius: 5px;
 	border-bottom-right-radius: 5px;
 	position: absolute;
 	width: 100%;
-	top: 40px;
+	top: 30px;
 	box-sizing: border-box;
 	z-index: 1;
 	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.603);
+	padding-top: 10px;
 }
 
 .defaultOptionStyle:last-child{

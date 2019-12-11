@@ -5,7 +5,8 @@ const initialState = {
 	screenResolution: {
 		width: screenResolutions[0].width,
 		height: screenResolutions[0].height
-	}
+	},
+	zoomValue: 0.75
 };
 
 export const editor = (state = initialState, action) => {
@@ -17,6 +18,11 @@ export const editor = (state = initialState, action) => {
 					width: action.payload.width,
 					height: action.payload.height
 				}
+			};
+		case Actions.CHANGE_ZOOM_VALUE:
+			return {
+				...state,
+				zoomValue: action.payload
 			};
 		default:
 			return state;
