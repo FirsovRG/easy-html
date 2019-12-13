@@ -1,8 +1,9 @@
 .workspace {
-    background-image: url('../../../resources/images/bg1.png');
-    flex-grow: 1;
+  background-image: url('../../../resources/images/bg1.png');
+  flex-grow: 1;
+  display: flex;
 }
 
 .canvas {
-    background-color: rgba(255,255,255, .2);
+  background-color: rgba(255, 255, 255, 0.1);
 }
